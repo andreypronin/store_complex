@@ -1,5 +1,6 @@
 require 'store_complex/version'
 require 'observable_object'
+require 'active_record'
 require 'json'
 
 module StoreComplex
@@ -32,4 +33,4 @@ module StoreComplex
   end
 end
 
-ActiveRecord.extend StoreComplex::Accessor
+ActiveRecord::Base.extend StoreComplex::Accessor
